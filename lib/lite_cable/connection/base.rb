@@ -43,7 +43,7 @@ module LiteCable
 
       attr_reader :subscriptions, :streams, :coder
 
-      def initialize(socket, coder: nil)
+      def initialize(socket, coder: nil, **)
         @socket = socket
         @coder = coder || LiteCable.config.coder
 
